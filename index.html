@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DOCX to PDF Converter</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="background-texture"></div>
+
+  <div class="container animate-pop">
+    <h2>DOCX to PDF Converter</h2>
+
+    <!-- Drag and Drop Area -->
+    <div id="drop-zone" class="drop-zone">
+      <p>Drag & drop your .docx file here<br>or click to upload</p>
+      <input type="file" id="upload" accept=".docx" hidden />
+    </div>
+
+    <p id="status"></p>
+    <button onclick="convertToPDF()">Convert to PDF</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
